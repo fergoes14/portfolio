@@ -16,6 +16,18 @@
   border-bottom: 3px solid #D4AF37; /* Linha dourada para destacar o título */
   padding-bottom: 10px;
 }
+.project-image-container {
+  max-height: 200px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Faz a imagem se ajustar bem ao contêiner */
+}
 
 /* Contêiner para os Cards de Projetos */
 .projects .project-container {
