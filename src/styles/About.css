@@ -1,0 +1,99 @@
+/* Estilo para a seção About */
+.about {
+  background-color: #1a1a1a; /* Fundo escuro para a seção */
+  padding: 50px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra suave para profundidade */
+  text-align: center;
+}
+
+/* Contêiner para o texto e a imagem */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para o texto */
+.about-text {
+  max-width: 1000px;
+  
+  
+ 
+  text-align: left;
+}
+
+/* Título da seção About */
+.about h2 {
+  color: #F5F5F5;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #D4AF37;
+  padding-bottom: 10px;
+}
+
+/* Estilo para o parágrafo (texto) na seção About */
+.about p {
+  color: #D4AF37;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* Estilo para a imagem de perfil */
+.about-image img {
+  max-width: 400px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 5px solid #D4AF37; /* Borda dourada */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%); /* Começa fora da tela, à esquerda */
+    opacity: 0; /* Começa invisível */
+  }
+  to {
+    transform: translateX(0); /* Vai até a posição original */
+    opacity: 1; /* Fica visível */
+  }
+}
+
+/* Classe para aplicar a animação */
+.title {
+  animation: slideIn 0.8s ease-out;
+  
+  /* Você pode adicionar outras propriedades aqui, se necessário */
+}
+
+
+
+/* Responsividade */
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row; /* Alinha o texto e a imagem horizontalmente */
+    justify-content: center;
+    text-align: left;
+  }
+
+  /*.about-text {
+    /*max-width: 500px; */
+    /* Ajuste a largura do texto em telas maiores */
+  
+
+  
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Coloca imagem e texto empilhados em telas pequenas */
+  }
+
+  .about-image img {
+    max-width: 150px; /* Ajuste o tamanho da imagem para telas pequenas */
+  }
+}

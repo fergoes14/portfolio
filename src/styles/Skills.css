@@ -1,0 +1,96 @@
+/* Estilo para a seção de Skills */
+.skills {
+  background-color: #1a1a1a; /* Fundo escuro para a seção */
+  padding: 50px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra suave para profundidade */
+  text-align: center;
+}
+
+/* Título da seção Skills */
+.skills h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #F5F5F5; /* Cor clara para o título */
+  font-size: 2rem; /* Tamanho ajustado */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #D4AF37; /* Linha dourada para destacar o título */
+  padding-bottom: 10px;
+}
+
+/* Estilo para a lista de habilidades */
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilo para cada habilidade */
+.skills li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem; /* Tamanho ajustado da fonte */
+  color: #D4AF37; /* Dourado para destacar as habilidades */
+  margin: 15px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase; /* Tornando as palavras maiúsculas para mais impacto */
+}
+
+/* Estilo para o nível da habilidade */
+.skills .skill-level {
+  font-size: 0.9rem; /* Tamanho ajustado para o nível */
+  color: #B0B0B0; /* Cor cinza clara para o nível */
+  margin-top: 5px;
+}
+
+/* Estilo para a barra de progresso */
+.skills .skill-bar {
+  background-color: #444444; /* Fundo escuro para a barra */
+  border-radius: 5px;
+  margin-top: 15px;
+  height: 10px;
+  width: 100%;
+}
+
+/* Estilo para o preenchimento da barra de progresso */
+.skills .skill-bar-inner {
+  background-color: #D4AF37; /* Dourado para o preenchimento da barra */
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas de 768px ou menores (tablets e celulares grandes) */
+@media (max-width: 768px) {
+  .skills h2 {
+    font-size: 1.8rem; /* Ajusta o tamanho do título */
+  }
+
+  .skills li {
+    font-size: 1.1rem; /* Ajusta o tamanho da fonte das habilidades */
+  }
+
+  .skills .skill-level {
+    font-size: 0.8rem; /* Ajusta o tamanho do nível da habilidade */
+  }
+}
+
+/* Para telas de 480px ou menores (celulares pequenos) */
+@media (max-width: 480px) {
+  .skills h2 {
+    font-size: 1.6rem; /* Reduz o tamanho do título */
+  }
+
+  .skills li {
+    font-size: 1rem; /* Ajusta o tamanho da fonte das habilidades */
+  }
+
+  .skills .skill-level {
+    font-size: 0.7rem; /* Ajusta o tamanho do nível da habilidade */
+  }
+
+  .skills {
+    padding: 40px 15px; /* Ajusta o padding da seção */
+  }
+}

@@ -1,0 +1,96 @@
+/* Estilo para a seção de Projetos */
+.projects {
+  background-color: #1a1a1a; /* Cor de fundo escura para a seção */
+  padding: 50px 20px;
+  border-radius: 15px; /* Bordas arredondadas para suavizar o visual */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra leve para dar profundidade */
+}
+
+/* Título da seção Projetos */
+.projects h2 {
+  color: #F5F5F5; /* Cor clara para o título */
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #D4AF37; /* Linha dourada para destacar o título */
+  padding-bottom: 10px;
+}
+
+/* Contêiner para os Cards de Projetos */
+.projects .project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Espaço entre os cards */
+  justify-content: center; /* Centralizar os cards na tela */
+}
+
+/* Estilo para cada Card de Projeto */
+.projects .project-card {
+  background-color: #2a2a2a; /* Fundo escuro para o card */
+  border: 1px solid #444444; /* Borda fina para o card */
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(33.33% - 30px); /* Card ocupa 1/3 da largura disponível */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Efeito de Hover nos Cards de Projeto */
+.projects .project-card:hover {
+  transform: translateY(-5px); /* Levanta o card ao passar o mouse */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra mais forte no hover */
+}
+
+/* Título do Card de Projeto */
+.projects .project-card h3 {
+  color: #D4AF37; /* Dourado para o título do card */
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+/* Descrição do Card de Projeto */
+.projects .project-card p {
+  color: #B0B0B0; /* Texto de descrição em cinza claro */
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Link do GitHub no Card de Projeto */
+.projects .project-card a {
+  color: #D4AF37; /* Dourado no link para se destacar */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+/* Efeito de Hover no Link */
+.projects .project-card a:hover {
+  color: #F5F5F5; /* Muda para branco no hover */
+  text-decoration: underline; /* Sublinha o link no hover */
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas de 768px ou menores (tablets e celulares grandes) */
+@media (max-width: 768px) {
+  .projects .project-card {
+    width: calc(50% - 30px); /* Dois cards por linha */
+  }
+}
+
+/* Para telas de 480px ou menores (celulares pequenos) */
+@media (max-width: 480px) {
+  .projects .project-card {
+    width: calc(100% - 30px); /* Um card por linha */
+  }
+
+  .projects h2 {
+    font-size: 2rem; /* Reduz o tamanho da fonte do título */
+  }
+
+  .projects .project-container {
+    gap: 15px; /* Diminui o espaço entre os cards */
+  }
+}

@@ -1,0 +1,134 @@
+/* Estilo para a seção Contact */
+.contact {
+  background-color: #1a1a1a; /* Fundo escuro para combinar com o tema */
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  text-align: center;
+}
+
+/* Título da seção Contact */
+.contact h2 {
+  color: #F5F5F5; /* Cor clara para o título */
+  font-size: 2.5rem; /* Ajuste de fonte padrão */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #D4AF37; /* Linha dourada para destacar */
+  padding-bottom: 10px;
+}
+
+/* Estilo geral para o formulário */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Estilo para os rótulos (labels) do formulário */
+form label {
+  font-size: 1.1rem; /* Fonte do rótulo */
+  color: #D4AF37; /* Dourado para rótulos */
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Estilo para inputs e textarea do formulário */
+form input,
+form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #D4AF37; /* Borda dourada */
+  border-radius: 8px;
+  background-color: #333; /* Fundo escuro para os campos */
+  color: #F5F5F5; /* Cor clara para o texto */
+  font-size: 1rem;
+  transition: all 0.3s ease; /* Transição suave para focar */
+  box-sizing: border-box;
+}
+
+/* Estilo para o placeholder nos campos do formulário */
+form input::placeholder,
+form textarea::placeholder {
+  color: #F5F5F5; /* Cor clara para o texto de placeholder */
+}
+
+/* Estilo para o botão do formulário */
+form button {
+  background-color: #D4AF37; /* Dourado para o botão */
+  color: #1a1a1a; /* Cor escura para o texto */
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo para o botão quando em hover */
+form button:hover {
+  background-color: #b78d28; /* Tom mais escuro de dourado no hover */
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas de 768px ou menores (tablets e celulares grandes) */
+@media (max-width: 768px) {
+  .contact h2 {
+    font-size: 2rem; /* Reduz o tamanho do título */
+  }
+
+  form {
+    padding: 0 10px; /* Diminui o padding para telas menores */
+  }
+
+  form label {
+    font-size: 1rem; /* Ajuste da fonte do rótulo */
+  }
+
+  form input,
+  form textarea {
+    font-size: 1rem; /* Ajusta o tamanho da fonte dos campos */
+    padding: 15px; /* Aumenta o padding para facilitar o toque */
+    border-radius: 10px; /* Bordas mais suaves */
+    height: 50px; /* Aumenta a altura para facilitar o clique */
+  }
+
+  form button {
+    font-size: 1.2rem; /* Ajusta o tamanho do botão */
+    padding: 15px 30px; /* Aumenta o tamanho do botão */
+  }
+}
+
+/* Para telas de 480px ou menores (celulares pequenos) */
+@media (max-width: 480px) {
+  .contact h2 {
+    font-size: 1.6rem; /* Reduz o tamanho do título para celular pequeno */
+  }
+
+  form {
+    padding: 0 10px; /* Ajuste o padding para telas pequenas */
+  }
+
+  form label {
+    font-size: 1rem; /* Ajuste de fonte do rótulo */
+  }
+
+  form input,
+  form textarea {
+    font-size: 1rem; /* Tamanho de fonte adequado */
+    padding: 18px; /* Padding mais generoso para toques mais fáceis */
+    border-radius: 10px; /* Bordas suaves */
+    height: 50px; /* Maior altura para facilitar o toque */
+  }
+
+  form button {
+    font-size: 1.1rem; /* Ajusta o tamanho do botão */
+    padding: 12px 30px; /* Aumenta o tamanho do botão */
+  }
+
+  .contact {
+    padding: 30px 10px; /* Ajusta o padding da seção */
+  }
+}
