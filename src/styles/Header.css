@@ -31,13 +31,13 @@ html, body {
 }
 
 nav {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin-right: 20px;
 }
 
 nav a {
   color: #D3D3D3;
-  text-decoration: none;
+  text-decoration: wavy;
   margin: 0 15px;
   font-size: 1.1em;
   transition: color 0.3s, text-shadow 0.3s;

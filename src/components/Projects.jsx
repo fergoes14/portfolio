@@ -8,22 +8,22 @@ function Projects() {
       <div className="project-container"> {/* Adicionado o container para os projetos */}
         <div className="project-card">
 
-          <h3>Projeto 1</h3>
+          <h3>Portfólio</h3>
           <div className="project-image-container">
-            <img src="https://i.imgur.com/fc7GzZX.png" alt="Projeto 1" className="project-image" /> {/* Imagem do projeto */}
+            <img src="https://i.imgur.com/7PrgUml.png" alt="Projeto" className="project-image" /> {/* Imagem do projeto */}
           </div>
-          <p>Descrição do projeto</p>
+          <p>Código completo do Portfólio</p>
           <a href="https://github.com/fergoes14/portfolio.git" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
         </div>
 
         <div className="project-card">
 
-          <h3>Projeto 1</h3>
+          <h3>API Clima</h3>
           <div className="project-image-container">
-            <img src="https://i.imgur.com/Buz0LMR.png" alt="Projeto 1" className="project-image" /> {/* Imagem do projeto */}
+            <img src="https://i.imgur.com/1KzH7sb.png" alt="Projeto" className="project-image" /> {/* Imagem do projeto */}
           </div>
-          <p>Descrição do projeto</p>
-          <a href="https://github.com/seu-usuario/projeto1" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+          <p>Dashboard Interativo em React</p>
+          <a href="https://github.com/fergoes14/dashboard.git" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
         </div>
 
         {/* Adicionar outros projetos aqui com a mesma estrutura */}

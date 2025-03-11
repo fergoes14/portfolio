@@ -30,9 +30,7 @@ nav a {
   margin: 0 15px;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

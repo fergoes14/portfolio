@@ -27,6 +27,7 @@ function About() {
         <div class="about-image">
           <img src="https://i.imgur.com/1V7wmkR.png" alt="Minha Imagem" />
         </div>
+        
       </div>
     </section>
   );

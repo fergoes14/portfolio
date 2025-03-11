@@ -9,6 +9,7 @@
 
 /* Contêiner para o texto e a imagem */
 .about-content {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
