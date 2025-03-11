@@ -13,7 +13,7 @@ function Projects() {
             <img src="https://i.imgur.com/fc7GzZX.png" alt="Projeto 1" className="project-image" /> {/* Imagem do projeto */}
           </div>
           <p>Descrição do projeto</p>
-          <a href="https://github.com/seu-usuario/projeto1" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+          <a href="https://github.com/fergoes14/portfolio.git" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
         </div>
 
         <div className="project-card">
