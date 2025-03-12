@@ -1,24 +1,40 @@
 import React from "react";
-import '../styles/Contact.css';
+import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import "../styles/Contact.css";
 
 function Contact() {
+    const handleWhatsAppClick = () => {
+        const message = "Olá, peguei seu contato no portfólio!";
+        const phoneNumber = "15998103788"; // Número de telefone no formato internacional sem espaços
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, "_blank");
+    };
+
     return (
         <section id="contact" className="contact">
             <h2>Contato</h2>
-            <form>
-                <label htmlFor="name">Nome</label>
-                <input type="text" id="name" name="name" required />
+            <p className="contact-description">
+                Você pode me contatar através dos canais abaixo. Fique à vontade para mandar uma mensagem, estou sempre disponível para conversar sobre projetos e outras oportunidades!
+            </p>
+            
+            <div className="contact-info">
+                <div className="contact-item">
+                    <FaEnvelope className="contact-icon" />
+                    <span className="contact-text">fergoes02@gmail.com</span>
+                </div>
 
-                <label htmlFor="email">E-mail</label>
-                <input type="email" id="email" name="email" required />
+                <div className="contact-item">
+                    <FaWhatsapp className="contact-icon" />
+                    <span className="contact-text">(15) 99810-3788</span>
+                </div>
+            </div>
 
-                <label htmlFor="message">Mensagem</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
+            <button className="contact-button" onClick={handleWhatsAppClick}>
+                Entrar em Contato
+            </button>
         </section>
     );
 }
 
 export default Contact;
+

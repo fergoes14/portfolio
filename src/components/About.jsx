@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import '../styles/About.css';
 
 function About() {
@@ -7,27 +6,26 @@ function About() {
 
   useEffect(() => {
     // Após o componente ser montado, adiciona a classe da animação
-    setAnimationClass("title");
+    setAnimationClass("title"); // Adiciona a classe de animação
   }, []);
+
   return (
-    <section class="about">
-      <div class="about-content">
-        <div class="about-text">
-          <h2 className="title">Sobre Mim</h2>
-          <p  className="title">
-            Olá! Eu sou Fernando de Goes, apaixonado por tecnologia e com uma jornada de aprendizado que começou como estagiário na Prefeitura de Votorantim. Desde lá, mergulhei de cabeça no mundo da programação e da cibersegurança, desenvolvendo habilidades em ReactJS, JavaScript, HTML, CSS, MongoDB, e muito mais.
+    <section className="about">
+      <div className="about-content">
+        <div className="about-text">
+          <h2 className={animationClass}>Sobre Mim</h2>
+          <p className={animationClass}>
+            Meu nome é Fernando de Goes e sou um desenvolvedor apaixonado por Tecnologia da Informação. Desde que comecei minha trajetória na área, sempre fui fascinado pela forma como a tecnologia pode transformar o mundo ao nosso redor. Minha curiosidade me levou a me aprofundar em diversas ferramentas e tecnologias, com foco no desenvolvimento web.
 
-            Trabalhei em projetos que envolvem desde a criação de dashboards interativos até o desenvolvimento de aplicações para resolver problemas do dia a dia, como o projeto "Coworking Universidades Sorocaba". Acredito que a chave para o sucesso está na combinação de boas práticas de codificação com uma constante busca por inovação.
+            Tenho experiência em ReactJS, JavaScript, MongoDB, HTML, CSS e Node.js, com um grande interesse em aprimorar minhas habilidades e aprender mais sobre cada uma dessas tecnologias. Durante meu tempo como estagiário e freelancer, pude aplicar esses conhecimentos em projetos reais, sempre com o objetivo de entregar soluções eficientes e de qualidade.
 
-            Com um forte interesse em hacking e segurança digital, sempre busco maneiras de aplicar essas paixões para criar soluções cada vez mais robustas e seguras. Estou sempre em busca de novos desafios e de me aprimorar para ajudar a transformar ideias em realidade.
+            Além disso, sou uma pessoa dedicada e comprometida em crescer profissionalmente. Estou em busca de novas oportunidades para expandir minhas competências e contribuir com o time de desenvolvimento. Acredito que a combinação da minha paixão por tecnologia e o meu desejo contínuo de aprender podem agregar muito à sua equipe.
 
-            Se você está procurando por alguém que seja dedicado, criativo e que tenha uma visão estratégica para o futuro da tecnologia, estou aqui para conversar!
-          </p>
+            Fico à disposição para conversar mais sobre como posso contribuir para o sucesso de sua empresa e estou ansioso para a oportunidade de discutir em mais detalhes as minhas habilidades e experiências.          </p>
         </div>
-        <div class="about-image">
+        <div className="about-image">
           <img src="https://i.imgur.com/1V7wmkR.png" alt="Minha Imagem" />
         </div>
-        
       </div>
     </section>
   );

@@ -2,7 +2,7 @@
 html, body {
   height: 100%; /* 100% de altura para preencher toda a tela */
   margin: 0; /* Remover margens padrão */
-  overflow: hidden; /* Impede que a página role */
+  
 }
 
 /* Header fixo com transparência */
@@ -51,6 +51,7 @@ nav a:hover {
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
   .header {
+    position: relative;
     flex-direction: column;
     padding: 10px;
     align-items: center;

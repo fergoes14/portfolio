@@ -1,22 +1,25 @@
 /* Estilo para a seção de Skills */
 .skills {
   margin-top: 100px;
-  background-color: #1a1a1a; /* Fundo escuro para a seção */
+  background-color: #1a1a1a;
   padding: 50px 20px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra suave para profundidade */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Título da seção Skills */
 .skills h2 {
-  font-family: 'Roboto', sans-serif;
-  color: #F5F5F5; /* Cor clara para o título */
-  font-size: 2rem; /* Tamanho ajustado */
+  font-family: "Roboto", sans-serif;
+  color: #f5f5f5;
+  font-size: 2rem;
   margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border-bottom: 3px solid #D4AF37; /* Linha dourada para destacar o título */
+  border-bottom: 3px solid #d4af37;
   padding-bottom: 10px;
 }
 
@@ -24,74 +27,81 @@
 .skills ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 /* Estilo para cada habilidade */
 .skills li {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem; /* Tamanho ajustado da fonte */
-  color: #D4AF37; /* Dourado para destacar as habilidades */
-  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: #d4af37;
   letter-spacing: 1px;
-  text-transform: uppercase; /* Tornando as palavras maiúsculas para mais impacto */
+  text-transform: uppercase;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Estilo para o nível da habilidade */
-.skills .skill-level {
-  font-size: 0.9rem; /* Tamanho ajustado para o nível */
-  color: #B0B0B0; /* Cor cinza clara para o nível */
-  margin-top: 5px;
+.skills li:hover {
+  transform: scale(1.1);
 }
 
-/* Estilo para a barra de progresso */
-.skills .skill-bar {
-  background-color: #444444; /* Fundo escuro para a barra */
-  border-radius: 5px;
-  margin-top: 15px;
-  height: 10px;
-  width: 100%;
+/* Estilo para os ícones */
+.skill-icon {
+  font-size: 2rem;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Estilo para o preenchimento da barra de progresso */
-.skills .skill-bar-inner {
-  background-color: #D4AF37; /* Dourado para o preenchimento da barra */
-  height: 100%;
-  border-radius: 5px;
-  transition: width 0.5s ease-in-out;
+/* Cores personalizadas para os ícones */
+.react {
+  color: #61dafb;
 }
 
-/* Media Queries para Responsividade */
+.js {
+  color: #f7df1e;
+}
 
-/* Para telas de 768px ou menores (tablets e celulares grandes) */
+.html {
+  color: #e34f26;
+}
+
+.mongo {
+  color: #4db33d;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
   .skills h2 {
-    font-size: 1.8rem; /* Ajusta o tamanho do título */
+    font-size: 1.8rem;
   }
 
   .skills li {
-    font-size: 1.1rem; /* Ajusta o tamanho da fonte das habilidades */
+    font-size: 1.1rem;
   }
 
-  .skills .skill-level {
-    font-size: 0.8rem; /* Ajusta o tamanho do nível da habilidade */
+  .skill-icon {
+    font-size: 1.8rem;
   }
 }
 
-/* Para telas de 480px ou menores (celulares pequenos) */
 @media (max-width: 480px) {
   .skills h2 {
-    font-size: 1.6rem; /* Reduz o tamanho do título */
+    font-size: 1.6rem;
   }
 
   .skills li {
-    font-size: 1rem; /* Ajusta o tamanho da fonte das habilidades */
+    font-size: 1rem;
   }
 
-  .skills .skill-level {
-    font-size: 0.7rem; /* Ajusta o tamanho do nível da habilidade */
+  .skill-icon {
+    font-size: 1.5rem;
   }
 
   .skills {
-    padding: 40px 15px; /* Ajusta o padding da seção */
+    padding: 40px 15px;
   }
 }

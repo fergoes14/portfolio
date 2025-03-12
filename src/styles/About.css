@@ -19,9 +19,6 @@
 /* Estilo para o texto */
 .about-text {
   max-width: 1000px;
-  
-  
- 
   text-align: left;
 }
 
@@ -68,11 +65,7 @@
 /* Classe para aplicar a animação */
 .title {
   animation: slideIn 0.8s ease-out;
-  
-  /* Você pode adicionar outras propriedades aqui, se necessário */
 }
-
-
 
 /* Responsividade */
 @media (min-width: 768px) {
@@ -82,12 +75,9 @@
     text-align: left;
   }
 
-  /*.about-text {
-    /*max-width: 500px; */
-    /* Ajuste a largura do texto em telas maiores */
-  
-
-  
+  .about-image img {
+    max-width: 300px; /* Ajuste o tamanho da imagem em telas maiores */
+  }
 }
 
 @media (max-width: 768px) {

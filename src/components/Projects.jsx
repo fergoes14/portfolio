@@ -26,6 +26,16 @@ function Projects() {
           <a href="https://github.com/fergoes14/dashboard.git" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
         </div>
 
+        <div className="project-card">
+
+          <h3>Fundamentos React</h3>
+          <div className="project-image-container">
+            <img src="https://i.imgur.com/88ZlbHW.png" alt="Projeto" className="project-image" /> {/* Imagem do projeto */}
+          </div>
+          <p>Apenas componentes de estudos basicos do React</p>
+          <a href="https://github.com/fergoes14/fundamentos-react.git" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+        </div>
+
         {/* Adicionar outros projetos aqui com a mesma estrutura */}
       </div>
     </section>
