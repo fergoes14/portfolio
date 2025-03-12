@@ -1,29 +1,21 @@
-Portfólio de Fernando Goes
-Este é o meu portfólio pessoal desenvolvido com ReactJS, onde apresento minhas habilidades, projetos e experiência na área de desenvolvimento web.
+# Portfólio de Fernando Goes
 
-Tecnologias Usadas
-ReactJS: Framework para construção de interfaces interativas.
-CSS: Estilização responsiva e moderna para o layout.
-HTML: Estrutura básica da página.
-JavaScript: Lógica de interação e manipulação da página.
-Como Rodar o Projeto
-Clone o repositório:
-git clone https://github.com/fergoes14/portfolio.git
-Instale as dependências:
-npm install
+Este é o meu portfólio pessoal desenvolvido com **ReactJS**, apresentando minhas habilidades, projetos e experiência na área de desenvolvimento web.
 
-Inicie o servidor de desenvolvimento:
-npm start
+## Tecnologias Usadas
+- **ReactJS**
+- **CSS**
+- **JavaScript**
 
-Isso irá abrir o projeto no seu navegador em http://localhost:3000.
+## Como Rodar o Projeto
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/fergoes14/portfolio.git
+   npm install
+   npm start
 
-Estrutura de Diretórios
-public/: Contém arquivos estáticos, como o index.html.
-src/: Contém os componentes React, arquivos de estilo e lógica de aplicação.
-package.json: Contém as dependências e scripts de configuração do projeto.
-Funcionalidades
-Layout responsivo adaptável a dispositivos móveis e desktop.
-Cards interativos para exibir informações sobre meus projetos.
-Seção "Sobre mim" com detalhes do meu percurso profissional.
-Contribuições
-Este repositório é pessoal, mas se você deseja contribuir ou sugerir melhorias, fique à vontade para abrir uma issue ou um pull request!
+## Estrutura de Diretórios
+src/
+  ├── App.js
+  ├── components/
+  ├── styles/
