@@ -8,20 +8,13 @@ HTML: Estrutura básica da página.
 JavaScript: Lógica de interação e manipulação da página.
 Como Rodar o Projeto
 Clone o repositório:
-bash
-Copiar
-Editar
 git clone https://github.com/fergoes14/portfolio.git
 Instale as dependências:
-bash
-Copiar
-Editar
 npm install
+
 Inicie o servidor de desenvolvimento:
-bash
-Copiar
-Editar
 npm start
+
 Isso irá abrir o projeto no seu navegador em http://localhost:3000.
 
 Estrutura de Diretórios
